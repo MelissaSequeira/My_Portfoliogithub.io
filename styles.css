@@ -471,6 +471,24 @@ i{
     background-size: cover;
     overflow: hidden;
 }
+.projimg6{
+    background-image: url('proj6.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.projimg7{
+    background-image: url('proj7.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.projimg8{
+    background-image: url('proj8.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
 
 .p-info p{
     margin-top:30px;
