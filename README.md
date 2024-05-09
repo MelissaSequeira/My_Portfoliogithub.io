@@ -2,4 +2,4 @@
 
 Portfolio
 
-check out my Personal Portfolio here: [https://github.com/MelissaSequeira/PRODIGY_WD_04github.io](https://melissasequeira.github.io/My_Portfoliogithub.io/)
+check out my Personal Portfolio here: [https://melissasequeira.github.io/My_Portfoliogithub.io/](https://melissasequeira.github.io/My_Portfoliogithub.io/)
