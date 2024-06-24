@@ -6,13 +6,24 @@
     margin:0%;
     padding:0%;
 }
+:root {
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color: white;
+    --main-color:  rgb(255, 0, 157);
+
+}
 html{
     scroll-behavior:smooth;
 }
 body{
     background-color: black;
     display: table-footer-group;
+        background: var(--bg-color);
+        color: var(--text-color);
+
 }
+
 #home-sec{
     height: 820px;
     width:100%;
@@ -22,7 +33,7 @@ body{
     width:100%;
 }
 #edu-sec{
-    height: 820px;
+    height: 1000px;
     width:100%;
     display: flex;
     flex-direction: row; 
@@ -40,11 +51,93 @@ body{
     width:100%;
     color: white;
     display: flex;
+    backdrop-filter: blur(10px);
     flex-direction: row;
     align-items: center;
     align-content: center;
     justify-content: space-between;
     position: fixed;
+}
+span{
+    color: var(--main-color);
+}
+.text-animation{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+    font-family: "Teko", sans-serif;
+    margin:0 20 20 20;
+}
+.text-animation span{
+    position: relative;
+}
+.text-animation span::before{
+    content: "Web Developer";
+    color: var(--main-color);
+    animation: words 20s infinite;
+}
+.text-animation span::after{
+    content: "";
+    background-color: var(--bg-color);
+    position: absolute;
+    top: 0;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--bg-color);
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+@keyframes cursor{
+    to{
+        border-left: 2px solid var(--main-color);
+    }
+}
+@keyframes words{
+    0%,
+    20%{
+        content: "Engineering Student";
+    }
+    21%,
+    40%{
+        content: "Frontend Designer";
+    }
+    41%,
+    60%{
+        content: "UI / UX Designer";
+    }
+    61%,
+    80%{
+        content: "Web Developer";
+    }
+    81%,
+    100%{
+        content: "Python Developer";
+    }
+}
+@keyframes typing{
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95%{
+        width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85%{
+        width: calc(100% + 8px);
+    }
 }
 .logo{
     margin-left: 30px;
@@ -92,7 +185,7 @@ body{
     flex-direction: row;
 }
 .home-part-1{
-    height: 800px;
+    height: 700px;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -102,7 +195,7 @@ body{
     padding-left: 80px;
 }
 .connectlink{
-    margin:30px;
+    margin:20px;
     height:50px;
     width:700px;
 }
@@ -345,8 +438,8 @@ i{
     box-shadow:rgba(255, 0, 157) 0px 2px 5px -1px,rgba(255, 0, 157) 0px 1px 3px -1px;
 }
 .exper{
-    width:50%;
-    height:650px;
+    width: 50%;
+    height: 860px;
     border-left: 2px solid rgba(255, 0, 157);
     margin-left: 50px;
     margin-top: 100px;
@@ -391,9 +484,9 @@ i{
       font-size: 35px;
     }
     .exper{
-        width:70%;
-        height:1100px;
-        border-left: 8px solid rgba(255, 0, 157);
+        width: 70%;
+        height: 1400px;
+        border-left: 6px solid rgba(255, 0, 157);
         margin-top: 100px;
         margin-left: 50px;
     }
@@ -798,10 +891,12 @@ i{
         color: black;
         text-align: right;
         box-shadow: rgba(255, 0, 157) 0px 7px 29px 0px;
+    }footer{
+        height: 260px;
     }
 }
 footer{
-    height: 350px;
+    height: 200px;
     width: 100%;
     background-color: rgb(80, 0, 68);
     color: white;
@@ -810,11 +905,16 @@ footer{
 }
 .f1-text{
     padding: 30px;
-    font-size: 60px;
+    font-size: 40px;
     letter-spacing: 4px;
 }
 .f2-text{
     padding: 20px;
-    font-size: 38px;
+    font-size: 28px;
     letter-spacing: 4px;
+}
+@media (max-width:700px) {
+footer{
+    height: 260px;
+}
 }
