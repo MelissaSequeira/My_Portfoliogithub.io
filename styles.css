@@ -23,7 +23,10 @@ body{
         color: var(--text-color);
 
 }
-
+#contact-sec{
+    height: 820px;
+    width:100%;
+}
 #home-sec{
     height: 820px;
     width:100%;
@@ -891,8 +894,70 @@ i{
         color: black;
         text-align: right;
         box-shadow: rgba(255, 0, 157) 0px 7px 29px 0px;
-    }footer{
-        height: 260px;
+    }
+}
+
+#contact-sec {
+    height: 820px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#contact-sec form {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+#contact-sec button {
+    height: 45px;
+    width: 100%;
+    background-color: transparent;
+    max-width: 500px;
+    color: white;
+    border-color:rgba(255, 0, 157);
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition-duration:  0.3s;
+}
+#contact-sec button:hover {
+    color:black;
+    background-color: rgb(255, 0, 157);
+    border-radius: 20px;
+    border-style: none;
+    box-shadow: rgba(255, 0, 157) 0px 7px 29px 0px;
+}
+#contact-sec input, #contact-sec textarea {
+    height: 35px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 100%;
+}
+#contact-sec textarea {
+    height: 100px;
+    resize: vertical;
+}
+#contact-sec h1 {
+    color: rgba(255, 0, 157);
+    margin-bottom: 20px;
+}@media (max-width: 700px) {
+    #contact-sec {
+        height: 900px;
+        width: 100%;
     }
 }
 footer{
