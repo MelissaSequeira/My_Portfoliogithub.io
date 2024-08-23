@@ -36,7 +36,7 @@ body{
     width:100%;
 }
 #edu-sec{
-    height: 1000px;
+    height: 1200px;
     width:100%;
     display: flex;
     flex-direction: row; 
@@ -98,23 +98,23 @@ span{
 @keyframes words{
     0%,
     20%{
-        content: "Engineering Student";
+        content: "an IT Engineer";
     }
     21%,
     40%{
-        content: "Frontend Designer";
+        content: "a Research Intern";
     }
     41%,
     60%{
-        content: "UI / UX Designer";
+        content: "an AI Enthusiast";
     }
     61%,
     80%{
-        content: "Web Developer";
+        content: "a Web Developer";
     }
     81%,
     100%{
-        content: "Python Developer";
+        content: "a Python Developer";
     }
 }
 @keyframes typing{
@@ -409,7 +409,7 @@ i{
 /* education section */
 .educate{
     width:50%;
-    height:690px;
+    height:750px;
     border-left: 2px solid rgba(255, 0, 157);
     margin-top: 100px;
     margin-left: 50px;
@@ -442,7 +442,7 @@ i{
 }
 .exper{
     width: 50%;
-    height: 860px;
+    height: 1100px;
     border-left: 2px solid rgba(255, 0, 157);
     margin-left: 50px;
     margin-top: 100px;
