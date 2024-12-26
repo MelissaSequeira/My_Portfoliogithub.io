@@ -31,6 +31,7 @@ body{
     height: 820px;
     width:100%;
 }
+
 #proj-sec{
     height: 820px;
     width:100%;
@@ -270,7 +271,7 @@ i{
     background:linear-gradient( rgba(255, 0, 157), rgba(255, 0, 157)); 
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 600px;
     width:300px;
     right: 2rem;
     box-shadow: rgba(255, 0, 157) 0px 7px 29px 0px;
@@ -742,14 +743,13 @@ i{
 #sktitle{
     margin:30px;
 }
-.container{
-    margin:30px;
+.container {
+    margin: 30px;
     height: 30px;
-    width: 400px;
+    width: 200px;
     border-radius: 30px;
     background-color: transparent;
-    border:1px solid rgba(255, 0, 157);
-}
+    border: 1px solid rgba(255, 0, 157);}
 .skills-html{
     height: 30px;
     width: 90%;
@@ -770,9 +770,19 @@ i{
     text-align: right;
     box-shadow: rgba(255, 0, 157) 0px 7px 29px 0px;
 }
+.skills-java{
+    height: 30px;
+    width: 65%;
+    border-radius: 30px;
+    background-color:rgba(255, 0, 157);
+    border:1px solid rgba(255, 0, 157);
+    color: black;
+    text-align: right;
+    box-shadow: rgba(255, 0, 157) 0px 7px 29px 0px;
+}
 .skills-js{
     height: 30px;
-    width: 40%;
+    width: 60%;
     border-radius: 30px;
     background-color:rgba(255, 0, 157);
     border:1px solid rgba(255, 0, 157);
@@ -800,6 +810,16 @@ i{
     text-align: right;
     box-shadow: rgba(255, 0, 157) 0px 7px 29px 0px;
 }
+.skills-git{
+    height: 30px;
+    width: 85%;
+    border-radius: 30px;
+    background-color:rgba(255, 0, 157);
+    border:1px solid rgba(255, 0, 157);
+    color: black;
+    text-align: right;
+    box-shadow: rgba(255, 0, 157) 0px 7px 29px 0px;
+}
 .skills-cplus{
     height: 30px;
     width: 65%;
@@ -816,7 +836,7 @@ i{
         width:100%;
     }
     .skill-box{
-        height: 1500px;
+        height: 2000px;
         width:90%;
         border-radius: 40px;
         font-size: 50px;
@@ -854,9 +874,9 @@ i{
         text-align: right;
         box-shadow: rgba(255, 0, 157) 0px 7px 29px 0px;
     }
-    .skills-js{
+    .skills-git{
         height: 70px;
-        width: 40%;
+        width: 85%;
         border-radius: 30px;
         background-color:rgba(255, 0, 157);
         border:1px solid rgba(255, 0, 157);
@@ -864,6 +884,17 @@ i{
         text-align: right;
         box-shadow: rgba(255, 0, 157) 0px 7px 29px 0px;
     }
+    .skills-js{
+        height: 70px;
+        width: 60%;
+        border-radius: 30px;
+        background-color:rgba(255, 0, 157);
+        border:1px solid rgba(255, 0, 157);
+        color: black;
+        text-align: right;
+        box-shadow: rgba(255, 0, 157) 0px 7px 29px 0px;
+    }
+    
     .skills-py{
         height: 70px;
         width: 60%;
@@ -884,6 +915,16 @@ i{
         color: black;
         text-align: right;
         box-shadow: rgba(255, 0, 157) 0px 7px 29px 0px;
+    
+    }.skills-java{
+        height: 70px;
+        width: 65%;
+        border-radius: 30px;
+        background-color:rgba(255, 0, 157);
+        border:1px solid rgba(255, 0, 157);
+        color: black;
+        text-align: right;
+        box-shadow: rgba(255, 0, 157) 0px 7px 29px 0px;
     }
     .skills-cplus{
         height: 70px;
@@ -896,6 +937,118 @@ i{
         box-shadow: rgba(255, 0, 157) 0px 7px 29px 0px;
     }
 }
+
+#achievements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 50px 0;
+    color: #080808;
+    font-size: 20px;
+    font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  z-index: -1;
+  font-style: normal;
+}
+
+.achievement {
+    position: relative;
+    width: 85%;
+    margin: 20px 0;
+    display: flex
+;
+    align-items: center;
+}
+
+.achievement.left {
+    justify-content: flex-end; /* Aligns content to the right (on the left side of the line) */
+    
+}
+
+.achievement.right {
+    justify-content: flex-start; /* Aligns content to the left (on the right side of the line) */
+}
+#achievements h1{
+    text-align: center;
+    color: #f9f9f9;
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 40px;
+}
+.achievement .content {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    background-color:rgba(255, 0, 157);
+    border:1px solid rgba(255, 0, 157);
+    color: black;
+    box-shadow: rgba(255, 0, 157) 0px 7px 29px 0px;
+font-size: 20px;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Limiting width for better alignment */
+}
+.achievement .content:hover {
+    color: #f9f9f9;
+    transition-duration: 0.5s;
+    background-color:rgba(255, 0, 157);
+    border:1px solid rgba(255, 0, 157);
+    box-shadow: rgba(255, 0, 157) 0px 7px 29px 0px;
+}
+.achievement .content img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.achievement h3 {
+    font-size: 1.2em;
+    margin: 0;
+    
+}
+
+/* Timeline line */
+#achievements:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background-color: #333;
+    z-index: -1;
+}
+
+.achievement.left .content:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #333;
+    top: 50%;
+    right: -10px; /* Positions the marker on the right side of the content (for left-aligned items) */
+    transform: translateY(-50%);
+}
+
+.achievement.right .content:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #333;
+    top: 50%;
+    left: -10px; /* Positions the marker on the left side of the content (for right-aligned items) */
+    transform: translateY(-50%);
+}
+
 
 #contact-sec {
     height: 820px;
@@ -954,6 +1107,10 @@ i{
 #contact-sec h1 {
     color: rgba(255, 0, 157);
     margin-bottom: 20px;
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 40px;
 }@media (max-width: 700px) {
     #contact-sec {
         height: 900px;
