@@ -1,4 +1,4 @@
-my perrsonal
+my personal
 
 Portfolio
 
